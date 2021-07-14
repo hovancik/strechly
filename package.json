@@ -137,6 +137,7 @@
     "i18next-fs-backend": "^1.1.1",
     "luxon": "^1.27.0",
     "meeussunmoon": "^3.0.3",
+    "merge-img-vwv": "*",
     "ps-list": "^7.2.0",
     "rtl-detect": "^1.0.3",
     "semver": "^6.3.0",

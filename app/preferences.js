@@ -189,6 +189,14 @@ window.onload = (e) => {
       }
     }
 
+    document.querySelector("#breakIconType").value = settings.breakIconType;
+    if (!eventsAttached) {
+      document.querySelector("#breakIconType").onchange = (event) => {
+        ipcRenderer.send("save-setting", "breakIconType", event.target.value);
+        setWindowHeight();
+      };
+    }
+
     document.querySelectorAll('input[type="range"]').forEach(range => {
       const divisor = range.dataset.divisor
       const output = range.closest('div').querySelector('output')
